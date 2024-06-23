@@ -194,8 +194,125 @@
             }
         }
 
+        .talim__bottom__xalqaro {
+            margin-top: 50px;
+            .talim__bottom__xalqaro__inner {
+                position: relative;
+                .talim__bottom__xalqaro__main__img {
+                    width: 100%;
+
+                    
+                }
+                .xalaqaro__img__text {
+                    position: absolute;
+                    font-weight: 400;
+                    font-size: clamp(10px, 2vw, 16px);
+                    width:35%;
+                    color: #184AFB;
+                    top: 20px;
+                    right: 10px;
+                }
+
+            }
+            .talim__bottom__xalqaro__right {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                margin-top: 5px;
+                .talim__bottom__xalqaro__right__inner {
+                    // width:100%;
+                    width: 100%;
+                    height: 150px;
+                    border-radius: 8px;
+                    border: 1px solid #CCCCCC;
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .rigth__inner__link__cover {
+                        a {
+                            display: flex;
+                            justify-content: space-between;
+                            p {
+                                font-weight: 400;
+                                font-size: clamp(12px, 2vw, 19px);
+                                color: #56585E;
+                                font-family: michroma;
+                            }
+                            img {
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    }
+                    .talim__bottom__xalqaro__right__inner__btn {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #184AFB;
+                        padding: 6px 40px;
+                        border-radius: 20px;
+                        border: none;
+                        width: 160px;
+                        background-color: #F5F5F5;
+                    }
+                    
+                }
+            }
+        }
+
+        .talim___bottomBlog {
+            margin-top: 60px;
+            .talim__bottomBlog__cover {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                .talim__bottomBlog__cover__inner {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    .talim__bottomBlog__cover__inner__img {
+                        width: 100%;
+                    }
+                    .talim__bottomBlog__cover__inner__infos {
+                        display: flex;
+                        gap: 20px;
+                        p {
+                            font-weight: 400;
+                            font-size: clamp(14px,2vw,16px);
+                            color: #2E303899;
+                            font-family: michroma;
+                        }
+                    }
+                }
+            }
+        }
+
+      
 
 
+
+
+    }
+}
+
+@media (min-width:596px) {
+    .talim {
+        .talim__bottom {
+            .talim___bottomBlog {
+                .talim__bottomBlog__cover {
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+    
+                }
+               
+    
+            }
+
+        }
     }
 }
 
@@ -235,6 +352,7 @@
             .talim__bottomRight {
                 width: 50%;
             }
+
             
           
         }
@@ -269,10 +387,51 @@
     .talim {
         .talim__bottom {
             .talim__bottomLeft {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 25px;
+                h1 {
+                    line-height: 40px;
+                }
+                p {
+                    margin-top: 35px;   
+                    max-width: 500px;
+                
+                }
+            }
+  
+
+
+            
+        }
+    }
+}
+@media (min-width:900px) {
+    .talim {
+        .talim__bottom {
+            .talim__bottomLeft {
                 h1 {
                     line-height: 40px;
                 }
             }
+            .talim__bottom__xalqaro {
+                // display: flex;
+                // gap:  30px;
+                // align-items: flex-start;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 20px;
+                .talim__bottom__xalqaro__inner {
+                   .talim__bottom__xalqaro__main__img {
+                        padding-top: 5px;
+                        width: 100%;
+                        // height: 300px;
+                   } 
+
+                }
+            }
+  
 
 
             
@@ -303,6 +462,15 @@
                         }
                     }
                 }
+            }
+            .talim___bottomBlog {
+                .talim__bottomBlog__cover {
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+    
+                }
+               
+    
             }
         }
     }

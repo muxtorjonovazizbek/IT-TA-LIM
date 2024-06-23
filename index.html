@@ -15,64 +15,68 @@
 
     <style>
       .loader {
-          top: 0;
-          position: fixed;
-          width: 100vw;
-          left: 0;
-          display: flex;
-          height: 100vh;
-          justify-content: center;
-          align-items: center;
-          z-index: 1000;
-          background: #fffcfc;
-          transition: opacity 1s, visibility 1s;
+        top: 0;
+        position: fixed;
+        width: 100vw;
+        left: 0;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        background: #fffcfc;
+        transition: opacity 1s, visibility 1s;
       }
 
       .loader--hidden {
-          opacity: 0;
-          visibility: hidden;
+        opacity: 0;
+        visibility: hidden;
       }
 
-
       .loader::after {
-          content: "";
-          width: 75px;
-          height: 75px;
-          border: 15px solid rgb(225, 222, 222);
-          border-top-color: #1C3EF0;
-          border-radius: 50%;
-          animation: loading 1s ease-in-out infinite;
+        content: "";
+        width: 75px;
+        height: 75px;
+        border: 15px solid rgb(225, 222, 222);
+        border-top-color: #1c3ef0;
+        border-radius: 50%;
+        animation: loading 1s ease-in-out infinite;
       }
 
       @keyframes loading {
-          from {transform: rotate(0);}
-          to {transform: rotate(1turn);}
+        from {
+          transform: rotate(0);
+        }
+        to {
+          transform: rotate(1turn);
+        }
 
-          /*The rotate animation can be given like this above or below both work same  */
+        /*The rotate animation can be given like this above or below both work same  */
 
-         /* 0% {
+        /* 0% {
           transform: rotate(0deg);
          }
          100% {
           transform: rotate(360deg);
          } */
       }
-  </style>
+    </style>
 
     <script>
-        window.addEventListener("load", () =>  {
-            const loader = document.querySelector(".loader");
+      window.addEventListener("load", () => {
+        const loader = document.querySelector(".loader");
 
-            loader.classList.add("loader--hidden");
+        loader.classList.add("loader--hidden");
 
-            document.querySelector(".loader").addEventListener("transitionend", () => {
-                document.body.removeChild(document.querySelector(".loader"));
-            });
-        });
+        document
+          .querySelector(".loader")
+          .addEventListener("transitionend", () => {
+            document.body.removeChild(document.querySelector(".loader"));
+          });
+      });
     </script>
   </head>
   <body>
-
     <div class="loader"></div>
 
     <header>
@@ -137,17 +141,20 @@
         <div class="pages__bottom">
           <div class="pages__bottomLeft">
             <h1>IT ta’lim uyshmasi bilan bo’ling</h1>
-            <p>O‘zbekistonda qizlarni akt sohasiga yana-da kengroq jalb etish va ularning it-ko‘nikmalarini ko'nikmalarini rivojlantirish </p>
+            <p>
+              O‘zbekistonda qizlarni akt sohasiga yana-da kengroq jalb etish va
+              ularning it-ko‘nikmalarini ko'nikmalarini rivojlantirish
+            </p>
 
             <button>Batafsil</button>
           </div>
 
           <div class="pages__bottomRight">
-            <img src="./imgs/pages img 1.svg" alt="img">
+            <img src="./imgs/pages img 1.svg" alt="img" />
           </div>
         </div>
       </section>
-      
+
       <section class="pages container">
         <div class="pages__top">
           <div class="pages__top__inner">
@@ -156,40 +163,50 @@
           </div>
         </div>
 
-        <div id="target" class="pages__bottom ">
+        <div id="target" class="pages__bottom">
           <div class="pages__bottomLeft">
             <h1>maqsadimiz bizni dunyo tan olishi</h1>
           </div>
 
-          <div class="bottom__leftTarget ">
+          <div class="bottom__leftTarget">
             <div class="bottom__leftTarget__imgCover">
-              <img src="./imgs/target img.svg" alt="target img">
+              <img src="./imgs/target img.svg" alt="target img" />
             </div>
 
             <div class="bottom__leftTarget__infos">
               <div class="bottom__leftTarget__info">
-                <p>IT sohasida faoliyat yuritayotgan davlat va nodavlat ta'lim muassasalarini qo'llab quvvatlash</p>
+                <p>
+                  IT sohasida faoliyat yuritayotgan davlat va nodavlat ta'lim
+                  muassasalarini qo'llab quvvatlash
+                </p>
                 <span><i class="fa-solid fa-arrow-right"></i></span>
               </div>
               <div class="bottom__leftTarget__info">
-                <p>IT sohasida faoliyat yuritayotgan davlat va nodavlat ta'lim muassasalarini qo'llab quvvatlash</p>
+                <p>
+                  IT sohasida faoliyat yuritayotgan davlat va nodavlat ta'lim
+                  muassasalarini qo'llab quvvatlash
+                </p>
                 <span><i class="fa-solid fa-arrow-right"></i></span>
               </div>
               <div class="bottom__leftTarget__info">
-                <p>IT sohasida faoliyat yuritayotgan davlat va nodavlat ta'lim muassasalarini qo'llab quvvatlash</p>
+                <p>
+                  IT sohasida faoliyat yuritayotgan davlat va nodavlat ta'lim
+                  muassasalarini qo'llab quvvatlash
+                </p>
                 <span><i class="fa-solid fa-arrow-right"></i></span>
               </div>
               <div class="bottom__leftTarget__info">
-                <p>IT sohasida faoliyat yuritayotgan davlat va nodavlat ta'lim muassasalarini qo'llab quvvatlash</p>
+                <p>
+                  IT sohasida faoliyat yuritayotgan davlat va nodavlat ta'lim
+                  muassasalarini qo'llab quvvatlash
+                </p>
                 <span><i class="fa-solid fa-arrow-right"></i></span>
               </div>
             </div>
           </div>
-
-          
         </div>
       </section>
-      
+
       <section class="talim container">
         <div class="talim__top">
           <div class="talim__top__inner">
@@ -198,57 +215,74 @@
           </div>
         </div>
 
-        <div id="target" class="talim__bottom ">
+        <div id="target" class="talim__bottom">
           <div class="talim__bottomLeft">
             <h1>ta’limga berilga imkoniyatdan foydalanish</h1>
           </div>
 
-         <div class="talim__bottomTalim">
-          <div class="talim__bottomTalim__card">
-            <p class="talim__card__p">IT ta’lim va online kontent ko’paytirish</p>
-            <img class="talim__card__img" src="/imgs/talim img  1.svg" alt="img">
+          <div class="talim__bottomTalim">
+            <div class="talim__bottomTalim__card">
+              <p class="talim__card__p">
+                IT ta’lim va online kontent ko’paytirish
+              </p>
+              <img
+                class="talim__card__img"
+                src="/imgs/talim img  1.svg"
+                alt="img"
+              />
 
-            <div class="talim__bottomTalim__card__infos">
-              <p>Davlat va nodavlat ta’lim muassasalari bilan hamkorlik qilish</p>
+              <div class="talim__bottomTalim__card__infos">
+                <p>
+                  Davlat va nodavlat ta’lim muassasalari bilan hamkorlik qilish
+                </p>
 
-              <div class="talim__bottomTalim__link">
-                <a href="#">Batafsil</a>
-                <img src="./imgs/arroe talim.svg" alt="img">
+                <div class="talim__bottomTalim__link">
+                  <a href="#">Batafsil</a>
+                  <img src="./imgs/arroe talim.svg" alt="img" />
+                </div>
+              </div>
+            </div>
+            <div class="talim__bottomTalim__card">
+              <p class="talim__card__p">A'ZOLIK</p>
+              <img
+                class="talim__card__img imgtwo"
+                src="./imgs/talim img 2.svg"
+                alt="img"
+              />
+
+              <div class="talim__bottomTalim__card__infos">
+                <p>
+                  Davlat va nodavlat ta’lim muassasalari bilan hamkorlik qilish
+                </p>
+
+                <div class="talim__bottomTalim__link">
+                  <a href="#">Batafsil</a>
+                  <img src="./imgs/arroe talim.svg" alt="img" />
+                </div>
+              </div>
+            </div>
+            <div class="talim__bottomTalim__card">
+              <p class="talim__card__p">ITARG'IBOT VA RAG'BATLANTIRISH</p>
+              <img
+                class="talim__card__img"
+                src="./imgs/talim img 3.svg"
+                alt="img"
+              />
+
+              <div class="talim__bottomTalim__card__infos">
+                <p>
+                  Davlat va nodavlat ta’lim muassasalari bilan hamkorlik qilish
+                </p>
+
+                <div class="talim__bottomTalim__link">
+                  <a href="#">Batafsil</a>
+                  <img src="./imgs/arroe talim.svg" alt="img" />
+                </div>
               </div>
             </div>
           </div>
-          <div class="talim__bottomTalim__card">
-            <p class="talim__card__p">A'ZOLIK</p>
-            <img class="talim__card__img imgtwo" src="./imgs/talim img 2.svg" alt="img">
-
-            <div class="talim__bottomTalim__card__infos">
-              <p>Davlat va nodavlat ta’lim muassasalari bilan hamkorlik qilish</p>
-
-              <div class="talim__bottomTalim__link">
-                <a href="#">Batafsil</a>
-                <img src="./imgs/arroe talim.svg" alt="img">
-              </div>
-            </div>
-          </div>
-          <div class="talim__bottomTalim__card">
-            <p class="talim__card__p">ITARG'IBOT VA RAG'BATLANTIRISH</p>
-            <img class="talim__card__img" src="./imgs/talim img 3.svg" alt="img">
-
-            <div class="talim__bottomTalim__card__infos">
-              <p>Davlat va nodavlat ta’lim muassasalari bilan hamkorlik qilish</p>
-
-              <div class="talim__bottomTalim__link">
-                <a href="#">Batafsil</a>
-                <img src="./imgs/arroe talim.svg" alt="img">
-              </div>
-            </div>
-          </div>
-         </div>
-
-          
         </div>
       </section>
-      
 
       <section class="pages container">
         <div class="pages__top">
@@ -258,35 +292,37 @@
           </div>
         </div>
 
-        <div id="target" class="pages__bottom ">
+        <div id="target" class="pages__bottom">
           <div class="pages__bottomLeft">
             <h1>ta’lim berilgan imkoniyatlar</h1>
           </div>
 
           <div class="pages___bottomImkon">
             <div class="pages__bottomImkon__box">
-              <img src="./imgs/imkon 1.svg" alt="img">
-              <p>O‘zbekistonda qizlarni akt sohasiga yana-da kengroq jalb etish</p>
-
+              <img src="./imgs/imkon 1.svg" alt="img" />
+              <p>
+                O‘zbekistonda qizlarni akt sohasiga yana-da kengroq jalb etish
+              </p>
             </div>
             <div class="pages__bottomImkon__box">
-              <img src="./imgs/imkon 2.svg" alt="img">
-              <p>O‘zbekistonda qizlarni akt sohasiga yana-da kengroq jalb etish</p>
-
+              <img src="./imgs/imkon 2.svg" alt="img" />
+              <p>
+                O‘zbekistonda qizlarni akt sohasiga yana-da kengroq jalb etish
+              </p>
             </div>
             <div class="pages__bottomImkon__box">
-              <img src="./imgs/imkon 3.svg" alt="img">
-              <p>O‘zbekistonda qizlarni akt sohasiga yana-da kengroq jalb etish</p>
-
+              <img src="./imgs/imkon 3.svg" alt="img" />
+              <p>
+                O‘zbekistonda qizlarni akt sohasiga yana-da kengroq jalb etish
+              </p>
             </div>
             <div class="pages__bottomImkon__box">
-              <img src="./imgs/imkon 4.svg" alt="img">
-              <p>O‘zbekistonda qizlarni akt sohasiga yana-da kengroq jalb etish</p>
-
+              <img src="./imgs/imkon 4.svg" alt="img" />
+              <p>
+                O‘zbekistonda qizlarni akt sohasiga yana-da kengroq jalb etish
+              </p>
             </div>
           </div>
-
-          
         </div>
       </section>
 
@@ -298,50 +334,453 @@
           </div>
         </div>
 
-        <div id="target" class="talim__bottom ">
+        <div id="target" class="talim__bottom">
           <div class="talim__bottomLeft">
             <h1>ta’lim berilgan imkoniyatlar</h1>
           </div>
 
           <div class="talim__give__cards">
             <div class="talim__give__card">
-              <img class="talim__give__card__mainImg" src="./imgs/give img 1.svg" alt="img"> 
-             <div class="talim__give__card__info">
-              <p>IT sohasida faoliyat yuritayotgan davlat va nodavlat ta'lim muassasalarini qo'llabquvvatlash</p>
+              <img
+                class="talim__give__card__mainImg"
+                src="./imgs/give img 1.svg"
+                alt="img"
+              />
+              <div class="talim__give__card__info">
+                <p>
+                  IT sohasida faoliyat yuritayotgan davlat va nodavlat ta'lim
+                  muassasalarini qo'llabquvvatlash
+                </p>
 
-              <img class="talim__give__card__info__img" src="./imgs/give arrow.svg" alt="img">
-             </div>
+                <img
+                  class="talim__give__card__info__img"
+                  src="./imgs/give arrow.svg"
+                  alt="img"
+                />
+              </div>
             </div>
             <div class="talim__give__card">
-              <img class="talim__give__card__mainImg" src="./imgs/give img 2.svg" alt="img"> 
-             <div class="talim__give__card__info">
-              <p>IT sohasida faoliyat yuritayotgan davlat va nodavlat ta'lim muassasalarini qo'llabquvvatlash</p>
+              <img
+                class="talim__give__card__mainImg"
+                src="./imgs/give img 2.svg"
+                alt="img"
+              />
+              <div class="talim__give__card__info">
+                <p>
+                  IT sohasida faoliyat yuritayotgan davlat va nodavlat ta'lim
+                  muassasalarini qo'llabquvvatlash
+                </p>
 
-              <img class="talim__give__card__info__img" src="./imgs/give arrow.svg" alt="img">
-             </div>
+                <img
+                  class="talim__give__card__info__img"
+                  src="./imgs/give arrow.svg"
+                  alt="img"
+                />
+              </div>
             </div>
             <div class="talim__give__card">
-              <img class="talim__give__card__mainImg" src="./imgs/give img 3.svg" alt="img"> 
-             <div class="talim__give__card__info">
-              <p>IT sohasida faoliyat yuritayotgan davlat va nodavlat ta'lim muassasalarini qo'llabquvvatlash</p>
+              <img
+                class="talim__give__card__mainImg"
+                src="./imgs/give img 3.svg"
+                alt="img"
+              />
+              <div class="talim__give__card__info">
+                <p>
+                  IT sohasida faoliyat yuritayotgan davlat va nodavlat ta'lim
+                  muassasalarini qo'llabquvvatlash
+                </p>
 
-              <img class="talim__give__card__info__img" src="./imgs/give arrow.svg" alt="img">
-             </div>
+                <img
+                  class="talim__give__card__info__img"
+                  src="./imgs/give arrow.svg"
+                  alt="img"
+                />
+              </div>
             </div>
             <div class="talim__give__card">
-              <img class="talim__give__card__mainImg" src="./imgs/give img 4.svg" alt="img"> 
-             <div class="talim__give__card__info">
-              <p>IT sohasida faoliyat yuritayotgan davlat va nodavlat ta'lim muassasalarini qo'llabquvvatlash</p>
+              <img
+                class="talim__give__card__mainImg"
+                src="./imgs/give img 4.svg"
+                alt="img"
+              />
+              <div class="talim__give__card__info">
+                <p>
+                  IT sohasida faoliyat yuritayotgan davlat va nodavlat ta'lim
+                  muassasalarini qo'llabquvvatlash
+                </p>
 
-              <img class="talim__give__card__info__img" src="./imgs/give arrow.svg" alt="img">
-             </div>
+                <img
+                  class="talim__give__card__info__img"
+                  src="./imgs/give arrow.svg"
+                  alt="img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pages container">
+        <div class="pages__top">
+          <div class="pages__top__inner">
+            <img src="./imgs/pages circle.svg" alt="circle img" />
+            <p>Imkoniyatlar</p>
+          </div>
+        </div>
+
+        <div id="target" class="pages__bottom">
+          <div class="pages__bottomLeft">
+            <h1>ta’lim berilgan imkoniyatlar</h1>
+          </div>
+
+          <div class="pages__bottomAkt">
+            <div class="pages__bottomAkt__card">
+              <img src="./imgs/akt img 1.svg" alt="img" />
+
+              <div class="pages__bottomAkt__infos">
+                <h4>
+                  Zamonaviy teledasturlar orqali yoshlarni AKT sohasiga kengroq
+                  jalb qilish
+                </h4>
+                <p>
+                  O‘zbekistonda qizlarni akt sohasiga yana-da kengroq jalb etish
+                  va ularning it-ko‘nikmalarini ko'nikmalarini rivojlantirish
+                </p>
+
+                <button>batafsil</button>
+              </div>
+            </div>
+            <div class="pages__bottomAkt__card">
+              <img src="./imgs/offline 1.svg" alt="img" />
+
+              <div class="pages__bottomAkt__infos">
+                <h4>
+                  Zamonaviy teledasturlar orqali yoshlarni AKT sohasiga kengroq
+                  jalb qilish
+                </h4>
+                <p>
+                  O‘zbekistonda qizlarni akt sohasiga yana-da kengroq jalb etish
+                  va ularning it-ko‘nikmalarini ko'nikmalarini rivojlantirish
+                </p>
+
+                <button>batafsil</button>
+              </div>
+            </div>
+            <div class="pages__bottomAkt__card">
+              <img src="./imgs/akt img 3.svg" alt="img" />
+
+              <div class="pages__bottomAkt__infos">
+                <h4>
+                  Zamonaviy teledasturlar orqali yoshlarni AKT sohasiga kengroq
+                  jalb qilish
+                </h4>
+                <p>
+                  O‘zbekistonda qizlarni akt sohasiga yana-da kengroq jalb etish
+                  va ularning it-ko‘nikmalarini ko'nikmalarini rivojlantirish
+                </p>
+
+                <button>batafsil</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="talim container">
+        <div class="talim__top">
+          <div class="talim__top__inner">
+            <img src="./imgs/pages circle.svg" alt="circle img" />
+            <p>Xalqaro</p>
+          </div>
+        </div>
+
+        <div id="target" class="talim__bottom">
+          <div class="talim__bottomLeft">
+            <h1>ta’lim berilga imkoniyatlardan foydalaish kerak</h1>
+          </div>
+
+          <div class="talim__bottom__xalqaro">
+            <div class="talim__bottom__xalqaro__inner">
+              <img
+                class="talim__bottom__xalqaro__main__img"
+                src="./imgs/xalqaro virtual glasses.svg"
+                alt="img"
+              />
+              <p class="xalaqaro__img__text">
+                Bizga A’zo bo’ling. Biznesingiz va siz dunyo taniydigan
+                darajadasiz
+              </p>
+            </div>
+            <div class="talim__bottom__xalqaro__right">
+              <div class="talim__bottom__xalqaro__right__inner">
+                <div class="rigth__inner__link__cover">
+                  <a href="#">
+                    <p>A’zo bo’lish</p>
+                    <img src="./imgs/xalqaro link.svg" alt="img" />
+                  </a>
+                </div>
+                <button class="talim__bottom__xalqaro__right__inner__btn">
+                  A’zolik
+                  <img src="./imgs/lus.svg" alt="img" />
+                </button>
+              </div>
+              <div class="talim__bottom__xalqaro__right__inner">
+                <div class="rigth__inner__link__cover">
+                  <a href="#">
+                    <p>Profile yaratish</p>
+                    <img src="./imgs/xalqaro link.svg" alt="img" />
+                  </a>
+                </div>
+                <button class="talim__bottom__xalqaro__right__inner__btn">
+                  Profile
+                  <img src="./imgs/lus.svg" alt="img" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pages container">
+        <div class="pages__top">
+          <div class="pages__top__inner">
+            <img src="./imgs/pages circle.svg" alt="circle img" />
+            <p>Partnyorlar</p>
+          </div>
+        </div>
+
+        <div id="target" class="pages__bottom">
+          <div class="pages__bottomLeft sideone">
+            <h1>Xamkorlar</h1>
+
+            <p>
+              O‘zbekistonda qizlarni akt sohasiga yana-da kengroq jalb etish va
+              ularning it-ko‘nikmalarini ko'nikmalarini rivojlantirish
+            </p>
+          </div>
+
+          <div class="pages_bottomXamkor">
+            <div class="pages__bottomXamkor__inner">
+              <p>ITIC</p>
+            </div>
+            <div class="bottomXamkor__line"></div>
+            <div class="pages__bottomXamkor__inner__extra">
+              <img src="./imgs/xamkor.svg" alt="img" />
+            </div>
+            <div class="bottomXamkor__line"></div>
+            <div class="pages__bottomXamkor__inner">
+              <p>ITIC</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="talim container">
+        <div class="talim__top">
+          <div class="talim__top__inner">
+            <img src="./imgs/pages circle.svg" alt="circle img" />
+            <p>Xalqaro</p>
+          </div>
+        </div>
+
+        <div id="target" class="talim__bottom">
+          <div class="talim__bottomLeft">
+            <h1>Yangiliklar va blog</h1>
+
+            <p>
+              O‘zbekistonda qizlarni akt sohasiga yana-da kengroq jalb etish va
+              ularning it-ko‘nikmalarini ko'nikmalarini rivojlantirish
+            </p>
+          </div>
+
+          <div class="talim___bottomBlog">
+            <div class="talim__bottomBlog__cover">
+              <div class="talim__bottomBlog__cover__inner">
+                <img class="talim__bottomBlog__cover__inner__img" src="./imgs/xalaqaro img.svg" alt="img" />
+                <div class="talim__bottomBlog__cover__inner__infos">
+                  <p>O‘zbekistonda qizlarni aktlari sohasiga yana-da kengroq</p>
+                  <img src="./imgs/arrow blog.svg" alt="img"/>
+                </div>
+              </div>
+              <div class="talim__bottomBlog__cover__inner">
+                <img class="talim__bottomBlog__cover__inner__img" src="./imgs/xalaqaro img 2.svg" alt="img" />
+                <div class="talim__bottomBlog__cover__inner__infos">
+                  <p>O‘zbekistonda qizlarni aktlari sohasiga yana-da kengroq</p>
+                  <img src="./imgs/arrow blog.svg" alt="img"/>
+                </div>
+              </div>
+              <div class="talim__bottomBlog__cover__inner">
+                <img class="talim__bottomBlog__cover__inner__img" src="./imgs/xalqaro img 3.svg" alt="img" />
+                <div class="talim__bottomBlog__cover__inner__infos">
+                  <p>O‘zbekistonda qizlarni aktlari sohasiga yana-da kengroq</p>
+                  <img src="./imgs/arrow blog.svg" alt="img"/>
+                </div>
+              </div>
+              <div class="talim__bottomBlog__cover__inner">
+                <img class="talim__bottomBlog__cover__inner__img" src="./imgs/xalqaro img 4.svg" alt="img" />
+                <div class="talim__bottomBlog__cover__inner__infos">
+                  <p>O‘zbekistonda qizlarni aktlari sohasiga yana-da kengroq</p>
+                  <img src="./imgs/arrow blog.svg" alt="img"/>
+                </div>
+              </div>
+              <div class="talim__bottomBlog__cover__inner">
+                <img class="talim__bottomBlog__cover__inner__img" src="./imgs/xalqaro img 5.svg" alt="img" />
+                <div class="talim__bottomBlog__cover__inner__infos">
+                  <p>O‘zbekistonda qizlarni aktlari sohasiga yana-da kengroq</p>
+                  <img src="./imgs/arrow blog.svg" alt="img"/>
+                </div>
+              </div>
+              <div class="talim__bottomBlog__cover__inner">
+                <img class="talim__bottomBlog__cover__inner__img" src="./imgs/xalqaro img 6.svg" alt="img" />
+                <div class="talim__bottomBlog__cover__inner__infos">
+                  <p>O‘zbekistonda qizlarni aktlari sohasiga yana-da kengroq</p>
+                  <img src="./imgs/arrow blog.svg" alt="img"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pages container">
+        <div class="pages__top">
+          <div class="pages__top__inner">
+            <img src="./imgs/pages circle.svg" alt="circle img" />
+            <p>Team</p>
+          </div>
+        </div>
+
+        <div id="target" class="pages__bottom">
+          <div class="pages__bottomLeft sideone">
+            <h1>it ta’lim uyushmasi jamoasi</h1>
+
+          <div class="pages__bottomLeft__btn__cover">
+
+            <button> 
+              
+              batafsil
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+            </button>
+          </div>
+          </div>
+
+          <div class="pages__bottomTeam">
+            <div class="pages__bottomTeam__acc">
+              <img src="./imgs/team 1.svg" alt="img">
+              <div class="pages__bottomTeam__acc__infos">
+                <h4>Nodirbek Barnayev</h4>
+                <p>Ijrochi director</p>
+              </div>
+            </div>
+            <div class="pages__bottomTeam__acc">
+              <img src="./imgs/team 2.svg" alt="img">
+              <div class="pages__bottomTeam__acc__infos">
+                <h4>Nodirbek Barnayev</h4>
+                <p>Ijrochi director</p>
+              </div>
+            </div>
+            <div class="pages__bottomTeam__acc">
+              <img src="./imgs/team 3.svg" alt="img">
+              <div class="pages__bottomTeam__acc__infos">
+                <h4>Munisa rizayeva</h4>
+                <p>Ijrochi director</p>
+              </div>
             </div>
           </div>
 
           
         </div>
       </section>
-      
+
+      <section class="headphones container">
+        <img class="headphones__img" src="./imgs/headphones img.svg" alt="img">
+
+        <div class="headphones__cover">
+          <div>
+            <img src="./imgs/headphones img 2.svg" alt="img">
+
+          <div class="headphones__cover__infos">
+            <h1>ta’limga berilgan imkoniyatdan foydalaish kerak</h1>
+            <p>O‘zbekistonda qizlarni akt sohasiga yana-da kengroq jalb etish va ularning</p>
+          </div>
+          </div>
+
+          <div class="headphones__cover__btn__cover">
+            <button>Kirish
+              <span><i class="fa-solid fa-plus"></i></span>
+            </button>
+
+          </div>
+        </div>
+      </section>
     </main>
+
+
+    <footer>
+        <div class="footer__wrapper container">
+          <img src="./imgs/footer logo.svg" alt="logo footer">
+
+         <div class="footer__wrapper__allLinksCover">
+          <div class="footer__wrapper__coverLists">
+            <div class="footer__wrapper__coverLists__linksCover">
+              <ul>
+                <li><a href="#">Ta'lim</a></li>
+                <li><a href="#">Targ'ibot</a></li>
+                <li><a href="#">Tadbirlar</a></li>
+                <li><a href="#">Targ'ibot</a></li>
+                <li><a href="#">A’zolik</a></li>
+              </ul>
+  
+              <ul>
+                <li><a href="#">Ta'lim</a></li>
+                <li><a href="#">A’zolik</a></li>
+                <li><a href="#">Targ'ibot</a></li>
+                <li><a href="#">Tadbirlar</a></li>
+                <li><a href="#">Targ'ibot</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__wrapper__coverLists__linksArrow">
+              <a href="#" class="footer__wrapper__coverLists__linksArrow__inner">
+                <div class="linksArrow__inner__cover">
+                  <img src="./imgs/footer sms.svg" alt="sms icon">
+                <p>info@it-talim.uz</p>
+                </div>
+                <img class="arrow__img" src="./imgs/footer arrow.svg" alt="arrow icon">
+              </a>
+              <a href="#" class="footer__wrapper__coverLists__linksArrow__inner">
+                <div class="linksArrow__inner__cover">
+                  <img src="./imgs/FOOTER call.svg" alt="call icon">
+                <p>+ (99)  803  7373</p>
+                </div>
+                <img class="arrow__img" src="./imgs/footer arrow.svg" alt="arrow icon">
+              </a>
+              <a href="#" class="footer__wrapper__coverLists__linksArrow__inner">
+                <div class="linksArrow__inner__cover">
+                  <img  src="./imgs/footer locatiom.svg  " alt="sms icon">
+                <p>info@it-talim.uz</p>
+                </div>
+                <img class="arrow__img" src="./imgs/footer arrow.svg" alt="arrow icon">
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__wrapper__soials">
+            <a href="#" class="footer__wrapper__soials__cover">
+              <p>telegram</p>
+              <img src="./imgs/footer social link.svg" alt="img">
+            </a>
+            <a href="#" class="footer__wrapper__soials__cover">
+              <p>instagram</p>
+              <img src="./imgs/footer social link.svg" alt="img">
+            </a>
+            <a href="#" class="footer__wrapper__soials__cover">
+              <p>Facebook</p>
+              <img src="./imgs/footer social link.svg" alt="img">
+            </a>
+          </div>
+         </div>
+        </div>
+    </footer>
   </body>
 </html>
