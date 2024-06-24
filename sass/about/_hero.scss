@@ -1,0 +1,261 @@
+.hero {
+    padding-top: 120px;
+    .hero__title {
+        padding-bottom: 30px;
+        h1 {
+            font-weight: 600;
+            font-size: clamp(20px, 4vw, 40px);
+            color: #2E3038;
+
+        }
+    }
+    .hero__imgCover {
+        padding-bottom: 16px;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    .hero__stats {
+        width: 100%;
+        display: flex;
+        gap: 50px;
+        .hero__stats__inner {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            // width: 20%;
+            h2 {
+                font-weight: 400;
+                font-size: clamp(20px, 4vw, 40px);
+                font-family: michroma;
+                color: #184AFB;
+            }
+            p {
+                font-weight: 400;
+                font-size: clamp(10px, 1vw, 16px);
+                font-family: michroma;
+            }
+        }
+        .left__line {
+            border-right: 1px solid transparent;
+            height: 90px;
+            padding-right: px;
+    
+        }
+    }
+    .hero__infoImgs {
+        margin-top: 60px;
+        border-bottom: 1px solid #CCCCCC;
+        margin-bottom: 50px;
+        padding-bottom: 30px;
+        .hero__infoImgs__img__cover {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .hero__infoImgs__img {
+                border: 1px solid #CCCCCC;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 30px 60px;
+            }
+
+        }
+        .hero__infoImgs__info__cover {
+           margin-top: 30px;
+           p {
+            font-weight: 400;
+            font-size: clamp(12px, 4vw, 16px);
+            color: #828388;
+           } 
+           .hero__infoImgs__info__cover__btnCover {
+            margin-top: 20px;
+            button {
+                width: 160px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 20px;
+                border: 1px solid #CCCCCC;
+                background-color: transparent;
+                color: #184AFB;
+                &:hover {
+                    background-color: #184AFB;
+                    color: white;
+                }
+            }
+           }
+        } 
+    }
+    .hero__xarakatlar {
+        padding-bottom: 35px;
+        border-bottom: 1px solid #CCCCCC;
+        margin-bottom: 30px;
+        .hero__xarakatlar__infos {
+            h2 {
+                font-weight: 600;
+                font-size: clamp(16px, 4vw, 32px);
+                color: #2E3038;
+            }
+            p {
+                margin-top: 16px;
+                font-weight: 400;
+                font-size: clamp(12px, 4vw, 16px);
+                color: #5A5C72;
+            }
+        }
+    }
+    .hero__start {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .hero__start__imgsCover {
+            .hero__start__imgsCover__imgInfo {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                // height: 200px;
+                .hero__start__img {
+                    border-radius: 12px;
+                    padding: 50px;
+                    padding-right: 60px;
+                    background-color: #F5F5F5;  
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                }  
+                .hero__start__info {
+                    margin-bottom: 50px;
+                    padding-bottom: 30px;
+                    border-bottom: 1px solid #CCCCCC;   
+                    p {
+                        font-weight: 400;
+                    font-size: 14px;
+                    color: #2E3038;
+                    font-family: michroma;
+                    }
+                    span {
+                        margin-top: 30px;
+                        display: inline-block;
+                        width: 80px;
+                        height: 36px;
+                        border-radius: 20px;
+                        border: 1px solid #CCCCCC;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #184AFB;
+                    }
+                }
+            }   
+        }
+    }
+    
+
+
+}
+
+
+@media (min-width:700px) {
+    .hero {
+        .hero__stats {
+            .left__line {
+                border-right: 1px solid  #CCCCCC;
+            }            
+        }
+        .hero__start {
+            .hero__start__imgsCover {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                justify-content: center;
+                .hero__start__imgsCover__imgInfo {
+                    display: flex;
+                    flex-direction: row;
+                    height: 200px;
+                    align-items: center;
+                    .hero__start__info {
+                        margin-top: 50px;
+                        padding-bottom: 50px;
+                        span {
+                            margin-top:60px;
+                        }
+                    }
+                }   
+            }
+        }
+        .hero__tadbir {
+           .hero__tadbir__imgs {
+            display: flex;
+            flex-direction: row;
+           } 
+        }
+       
+        
+        
+    }
+}
+@media (min-width:838px) {
+    .hero {
+        .hero__infoImgs {
+           .hero__infoImgs__img__cover {
+            display: flex;
+            flex-direction: row;
+           } 
+        }
+        
+        
+    }
+}
+
+
+@media (min-width:1200px) {
+    .hero {
+        padding-left: 300px;
+        .hero__stats {
+            .left__line {
+                height: 120px;
+            }
+        }
+        .hero__infoImgs {
+           .hero__infoImgs__info__cover {
+            display: flex;
+            align-items: center;
+            .hero__infoImgs__info__cover__btnCover {
+                margin-bottom: 25px;
+            }
+           } 
+        }   
+    }
+}
+@media (min-width:1300px) {
+    .hero {
+        padding-left: 300px;
+        .hero__stats {
+            .left__line {
+                height: 120px;
+            }
+        }
+        .hero__infoImgs {
+            .hero__infoImgs__img__cover {
+                display: flex;
+                gap: 20px;
+                .hero__infoImgs__img {
+                    padding: 60px 126px;
+                }
+            }
+           .hero__infoImgs__info__cover {
+            display: flex;
+            align-items: center;
+            .hero__infoImgs__info__cover__btnCover {
+                margin-bottom: 25px;
+            }
+           } 
+        }   
+    }
+}
